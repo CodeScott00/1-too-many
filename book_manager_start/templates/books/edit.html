@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form action="/books/{{book.id}}" method="post">
+    <div>
+      <label for="title">title:</label>
+      <input type="text" id="title" name="title" value="{{book.title}}" required autofocus>
+    </div>
+</form>
+
+{% endblock %}
